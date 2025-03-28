@@ -3,56 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Welcome to maxwellstevenson.com</title>
-    <meta name="keywords" content="maxwellstevenson.com, vafor, vafor IT, Vafor IT work, buildnow.gg, 1v1.lol, funnyshooter 2, smash karts, unblocked gxmes, gxmes, gxmes hub, gxmes online, gxmes space, gxmes spxce, gxmes space">
-    <meta name="description" content="Your go-to for everything school-related.">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3858578074050552" crossorigin="anonymous"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="assets/js/main.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Y3T9NZGP8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-9Y3T9NZGP8');
-    </script>
+    <title>Just Algebra</title>
     <style>
-        /* Your existing styles here... */
-        /* Add landing page styles here */
-        #landing-page {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.9);
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #f4f4f4;
+            margin: 0;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 100vh;
+        }
+        #landing-page {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             text-align: center;
-            z-index: 1000; /* Ensure it's on top */
         }
-
-        #real-content {
-            display: none; /* Initially hide the real content */
+        #landing-page h1 {
+            color: #333;
+            margin-bottom: 10px;
         }
-
+        #landing-page p {
+            color: #666;
+            margin-bottom: 20px;
+        }
         #continue-button {
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
             cursor: pointer;
+        }
+        #real-content {
+            display: none;
         }
     </style>
 </head>
 <body>
     <div id="landing-page">
-        <h1>Welcome to maxwellstevenson.com!</h1>
-        <p>Click the button below to enter.</p>
-        <button id="continue-button">Enter</button>
+        <h1>Welcome to Just Algebra</h1>
+        <p>Explore algebraic concepts and practice problems.</p>
+        <button id="continue-button">Enter Algebra Zone</button>
     </div>
     <div id="real-content">
         <nav class="navbar">
@@ -104,15 +98,9 @@
         </footer>
     </div>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const landingPage = document.getElementById('landing-page');
-            const realContent = document.getElementById('real-content');
-            const continueButton = document.getElementById('continue-button');
-
-            continueButton.addEventListener('click', function() {
-                landingPage.style.display = 'none';
-                realContent.style.display = 'block';
-            });
+        document.getElementById('continue-button').addEventListener('click', function() {
+            document.getElementById('landing-page').style.display = 'none';
+            document.getElementById('real-content').style.display = 'block';
         });
     </script>
 </body>
